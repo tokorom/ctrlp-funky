@@ -132,7 +132,7 @@ function! ctrlp#funky#accept(mode, str)
   let bufname = bufname(str2nr(bufnr, 10))
 
   " supports no named buffer
-  if empty(bufname)
+  if get(g:, 'ctrlp_funky_ignore_accept_mode', 0) || empty(bufname)
     call ctrlp#funky#goto_line(a:mode, a:str)
   else
     let fpath = fnamemodify(bufname, ':p')

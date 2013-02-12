@@ -52,6 +52,11 @@ Defining a mapping for this command must be useful. >
 SETTINGS					*funky-settings*
 You can customise the behaviour of ctrlp-funky using these variables.
 
+					*g:ctrlp_funky_ignore_accept_mode*
+Set this to 1 (enabled) a:mode is ignored in ctrlp#funky#accept.
+>
+	let g:ctrlp_funky_ignore_accept_mode = 0
+<
 
 						*funky-ruby*
 [ruby]
@@ -79,7 +84,6 @@ Set this to 1 (enabled) 'rake' filter will be absorbed.
 >
 	let g:ctrlp_funky_ruby_contains_rake = 1
 <
-
 
 ==============================================================================
 THANKS						*funky-thanks*
